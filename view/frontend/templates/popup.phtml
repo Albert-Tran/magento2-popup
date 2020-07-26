@@ -1,0 +1,18 @@
+<?php
+/**
+ * Fill content of popup in 'simple-modal_popup' element.
+ */
+?>
+<div id="simple-modal_popup" style="display: none">
+    <div>I love Magento 2.</div>
+</div>
+<div id="open-modal_popup" style="margin: 10px">
+    <button class="action"><?= __('Click me to open popup!');?></button>
+</div>
+<script type="text/x-magento-init">
+    {
+       "#open-modal_popup": {
+           "AlbertTran_Popup/js/popup": {}
+       }
+    }
+</script>
